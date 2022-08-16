@@ -1,7 +1,7 @@
 :root {
     --hover-color: rgb(103, 103, 200);
     --bg-color:rgb(245, 243, 243);
-    --secondary-bg-color: 	rgb(211,211,211);
+    --secondary-bg-color:rgb(211,211,211);
 }
 
 body {
@@ -25,14 +25,14 @@ body {
 
 .menu-item{
     display: inline-block;
-    margin-right: .6rem;
+    margin-right: 1rem;
 }
 
 .special-item {
     margin-right: 1.9rem;
 }
 
-.menu img{
+.menu-image{
     max-width: 25px;
     padding: 0px;
 }
@@ -55,9 +55,8 @@ a:hover, a:focus, .popup-item img:hover, .popup-item:focus {
 .popup-item, .popup-label, .input-more {
     cursor: pointer;
     position: absolute;
-    /* width: 37px; */
     top: 1rem;
-    right: 7.7rem;
+    right: 7.6rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -77,12 +76,14 @@ a:hover, a:focus, .popup-item img:hover, .popup-item:focus {
     padding: 1rem;
 }
 
-input.popup-item {
-    width: 2.2rem;
-    height: 2.1rem;
+.popup-item {
+    top: .85rem;
+    right: 7.45rem;
+    width: 1.4rem;
+    height: 1.4rem;
 }
 
-input.popup-item:checked ~ .dropdown{
+.popup-item:checked ~ .dropdown{
     display: block;
 }
 
@@ -94,15 +95,13 @@ input.popup-item:checked ~ .dropdown{
     padding: 0;
 }
 
-img {
-    max-width: 3.75rem;
+.menu-image {
     max-height: 3rem;
-    margin: 0.55rem;
 }
 
-.item img {
-    height: 1.6rem;
-    width: 2.6rem;
+.dropdown-image {
+    height: 2.4rem;
+    width: 2.3rem;
 }
 
 .item {
@@ -110,11 +109,11 @@ img {
     padding: 3px;
 }
 
-.item a{
+.dropdown-link{
     display: flex;
     flex-direction: column;
     align-items: center;
-	font-size: 18px;
+    font-size: 18px;
     padding-top: 0.3rem;
 }
 
@@ -130,7 +129,7 @@ img {
     cursor: pointer;
     height: 2.6rem;
     width: 98.5%;
-    top: 20.5rem;
+    top: 19rem;
     padding: 2px;
 }
 
@@ -183,7 +182,6 @@ img {
     .dropdown {
         right: 3rem;
     }
-    
     .wrapper{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
